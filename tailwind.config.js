@@ -20,7 +20,17 @@ export default {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
             },
         },
+        colors: {
+            black: "#020617",
+            blue: "#60a5fa",
+            white: "#f8fafc",
+            gray: "#64748b",
+            lightGray: "#e2e8f0",
+        },
     },
 
     plugins: [forms],
 };
+
+
+
