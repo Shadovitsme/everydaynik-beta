@@ -43,11 +43,7 @@ watch(range4, (n, o) => {
 </script>
 
 <template>
-  <p>{{ range }}</p>
-  <p>{{ range1 }}</p>
-  <p>{{ range2 }}</p>
-  <p>{{ range3 }}</p>
-  <p>{{ range4 }}</p>
+
   <input
     v-model.number="range1"
     v-on="{
