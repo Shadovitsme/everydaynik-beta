@@ -43,8 +43,9 @@ watch(range4, (n, o) => {
 </script>
 
 <template>
-
+<!-- TODO перекрасить в основной голубой -->
   <input
+  
     v-model.number="range1"
     v-on="{
       mouseenter: () => (range = 1),
