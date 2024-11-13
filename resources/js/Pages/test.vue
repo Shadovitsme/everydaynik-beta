@@ -9,11 +9,8 @@ import lightButton from '@/Components/lightButton.vue';
  <!-- TODO придумать как писать их в 2 столбца мол название сферы и результат. -->
     <swi></swi>
     <sliders></sliders>
-
-    <lightButton></lightButton>
-
-
-
-
-
+    <div class="flex ">
+    <lightButton content="сохранить"></lightButton>
+    <lightButton content="сбросить"></lightButton>
+</div>
 </template>
