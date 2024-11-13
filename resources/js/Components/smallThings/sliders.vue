@@ -1,6 +1,6 @@
 <script setup>
 import { ref, watch } from "vue";
-
+// TODO сделать их количество меняющимся
 const range1 = ref(50);
 const range2 = ref(50);
 const range3 = ref(50);
@@ -44,8 +44,10 @@ watch(range4, (n, o) => {
 
 <template>
 <!-- TODO перекрасить в основной голубой -->
-  <input
-  
+ <!-- TODO понять чего при увеличении одного увеличивается все -->
+<div class="block">
+  <div class="text-gray text-xs">sphere name</div>
+  <input class="w-2/5 mb-3"
     v-model.number="range1"
     v-on="{
       mouseenter: () => (range = 1),
@@ -53,7 +55,11 @@ watch(range4, (n, o) => {
     }"
     type="range"
   />
-  <input
+</div> 
+
+<div class="block">
+  <div class="text-gray text-xs">sphere name</div>
+  <input class="w-2/5 mb-3"
     v-model.number="range2"
     v-on="{
       mouseenter: () => (range = 2),
@@ -61,27 +67,37 @@ watch(range4, (n, o) => {
     }"
     type="range"
   />
-  <input
+</div> 
+
+<div class="block">
+  <div class="text-gray text-xs">sphere name</div>
+  <input class="w-2/5 mb-3"
     v-model.number="range3"
-    v-on:mouseenter="range = 3"
-    v-on:focus="range = 3"
+    v-on="{
+      mouseenter: () => (range = 3),
+      focus: () => (range = 3),
+    }"
     type="range"
   />
-  <input
+</div> 
+
+<div class="block">
+  <div class="text-gray text-xs">sphere name</div>
+  <input class="w-2/5 mb-3"
     v-model.number="range4"
     @mouseenter="range = 4"
     @focus="range = 4"
     type="range"
   />
-<input v-model="on" type="checkbox"/>
-  <p v-if="on" v-for="n in nums">{{ n }}</p>
+</div> 
+
 </template>
 
-<style scoped>
+<!-- <style scoped>
 input,
 p {
   width: 400px;
   display: block;
   margin: 3rem;
 }
-</style>
+</style> -->
