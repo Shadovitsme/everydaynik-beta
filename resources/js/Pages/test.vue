@@ -3,16 +3,11 @@ import sliders from '@/Components/smallThings/sliders.vue'
 import swi from '@/Components/smallThings/switch.vue'
 import lightButton from '@/Components/smallThings/buttons/lightButton.vue';
 import avatarIcon from '@/Components/smallThings/avatarIcon.vue';
+import topMenu from '@/Components/blocks/topMenu.vue';
 </script>
 <template>
- 
-<!-- TODO сделать тут добавление этих элементов по затычке иммитирующей бд -->
 
-<div class="h-14 mb-8 mx-10 relative">
-    <div class="text-4xl my-4 h-14 inline absolute left-0">EveryDaynik!</div>
-    <div class="h-14 inline absolute right-0" >sjflsdjfkl</div>
-</div>
-
+<topMenu></topMenu>
 
 
 <div class="mx-10">
