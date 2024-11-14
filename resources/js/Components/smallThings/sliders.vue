@@ -14,30 +14,30 @@ const nums = [123, 543, 4634, 6473, 245];
 
 watch(range1, (n, o) => {
   if (range.value == 1) {
-    range3.value += (n - o) / 4;
-    range2.value += (n - o) / 4;
-    range4.value += (n - o) / 4;
+    range3.value -= (n - o) / 4;
+    range2.value -= (n - o) / 4;
+    range4.value -= (n - o) / 4;
   }
 });
 watch(range2, (n, o) => {
   if (range.value == 2) {
-    range3.value += (n - o) / 4;
-    range1.value += (n - o) / 4;
-    range4.value += (n - o) / 4;
+    range3.value -= (n - o) / 4;
+    range1.value -= (n - o) / 4;
+    range4.value -= (n - o) / 4;
   }
 });
 watch(range3, (n, o) => {
   if (range.value == 3) {
-    range1.value += (n - o) / 4;
-    range2.value += (n - o) / 4;
-    range4.value += (n - o) / 4;
+    range1.value -= (n - o) / 4;
+    range2.value -= (n - o) / 4;
+    range4.value -= (n - o) / 4;
   }
 });
 watch(range4, (n, o) => {
   if (range.value == 4) {
-    range3.value += (n - o) / 4;
-    range2.value += (n - o) / 4;
-    range1.value += (n - o) / 4;
+    range3.value -= (n - o) / 4;
+    range2.value -= (n - o) / 4;
+    range1.value -= (n - o) / 4;
   }
 });
 </script>
