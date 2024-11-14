@@ -5,7 +5,7 @@ import lightButton from '../smallThings/buttons/lightButton.vue';
     <div class=" mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-16 p-10">
     <div class="px-4 py-2 flex items-center relative pb-7">
         <h1 class="text-black font-bold text-2xl uppercase absolute left-0">To-Do List</h1>
-        <lightButton class="absolute right-0" content="add"></lightButton>
+        <lightButton class="absolute right-0" content="add" link="/add"></lightButton>
     </div>
 
     <ul class="divide-y divide-lightGray px-4">

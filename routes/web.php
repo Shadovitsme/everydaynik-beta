@@ -18,6 +18,10 @@ Route::get('/settings', function () {
     return Inertia::render('settingsPage');
 });
 
+Route::get('/add', function () {
+    return Inertia::render('addPage');
+});
+
 Route::get('/', function () {
     return Inertia::render('mainPage');
 });
