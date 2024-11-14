@@ -7,7 +7,7 @@ import topMenu from '@/Components/blocks/topMenu.vue';
 </script>
 <template>
 
-<topMenu></topMenu>
+<topMenu ></topMenu>
 
 
 <div class="mx-10">

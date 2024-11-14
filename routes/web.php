@@ -14,8 +14,12 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/test', function () {
-    return Inertia::render('test');
+Route::get('/settings', function () {
+    return Inertia::render('settingsPage');
+});
+
+Route::get('/', function () {
+    return Inertia::render('mainPage');
 });
 
 Route::get('/dashboard', function () {
