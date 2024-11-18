@@ -44,7 +44,6 @@ watch(range4, (n, o) => {
 
 <template>
 <!-- TODO перекрасить в основной голубой -->
- <!-- TODO понять чего при увеличении одного увеличивается все -->
 <div class="block">
   <div class="text-gray text-xs">sphere name</div>
   <input class="w-2/5 mb-3"

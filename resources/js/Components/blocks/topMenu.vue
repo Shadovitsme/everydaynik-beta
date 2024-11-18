@@ -18,5 +18,5 @@ import avatarIcon from "@/Components/smallThings/avatarIcon.vue";
             </div>
         </div>
     </div>
-    <hr class="mx-10 bg-gray dark:bg-lightGray h-1 border-0 rounded">
+    <hr class="mx-10 mb-10 bg-gray dark:bg-lightGray h-1 border-0 rounded">
 </template>
