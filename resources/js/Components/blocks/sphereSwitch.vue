@@ -1,12 +1,13 @@
-
 <script setup>
-// TODO сделать чтоб их колво можно было менять и названия заполнять
-import swi from '@/Components/smallThings/switch.vue'
+import { ref } from "vue";
+// TODO сделать перещелки и названия 2 столбцами чтоб ровненько было
+import swi from "@/Components/smallThings/switch.vue";
 
+const items = ref(["Здоровье", "Карьера", "Деньги", "Взаимоотношения"]);
 </script>
 <template>
-    <div class="container flex align-items-center pb-5">
-    <div class="mr=10 text-lg">spherename</div>
-    <swi class="ml-10"></swi>
-</div>
+    <div v-for="item in items" class="container flex align-items-center pb-5">
+        <div class="mr=10 text-lg">{{ item }}</div>
+        <swi class="ml-10"></swi>
+    </div>
 </template>
